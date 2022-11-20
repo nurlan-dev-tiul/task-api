@@ -1,5 +1,3 @@
-const express = require('express');
-const sharp = require('sharp');
 const Task = require('../model/task');
 const cloudinary = require('cloudinary').v2;
 const uploadedApi = require('cloudinary').UploadApiResponse;
