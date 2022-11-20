@@ -21,12 +21,13 @@ v2.config({
 //! Подключение к MONGO DB
 dbConnect();
 
-//! Роуты
-app.use('/api', taskRoutes)
-
 app.get('/', (req, res) => {
     res.send('Ураа')
 })
+
+//! Роуты
+app.use('/api', taskRoutes)
+
 
 const PORT = process.env.PORT || 5000;
 
